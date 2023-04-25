@@ -1,7 +1,10 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import StyledButton from "../StyledButton";
+import CarItemPage from "./CarItemPage";
 import styles from './styles';
+
+
 
 const CarItem = (props) => {
 
@@ -29,9 +32,9 @@ const CarItem = (props) => {
         <StyledButton
           type="primary"
           content={"Custom Order"}
-          onPress={() => {
-            console.warn("Custom Order was pressed");
-          }}
+          onPress={() => <CarItemPage />
+            //console.warn("Custom Order was pressed");
+          }
         />
 
         <StyledButton
